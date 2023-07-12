@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    height: 300vh;
+}
+.navbar .navbar-nav .nav-link{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #A700FA;
+}
+.navbar .navbar-brand img{
+    height: 55px;
+}
+.header {
+    width: 100%;
+  /* background-image: url('../assets/images/bg.png'); */
+  background-size: cover;
+  transition: background-position 0.3s ease-in-out;
+  position: relative;
+  top: 0;
+}
+.background-img{
+    position: absolute;
+  top: 40%;
+  left: -10%;
+  width: 110%;
+}
+.background-img img{
+    width: 100%;
+    object-fit: contain;
+    animation: slideBackground 0.3s ease-in-out;
+}
+
+@keyframes slideBackground {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-10px);
+    }
+  }
+
+.heading h1{
+    font-size: 56px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.heading .head-clicks{
+    color: #fff;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 50px;
+}
+.heading p{
+    color: #00204C;
+    font-weight: 300;
+    font-size: 24px;
+   
+}
+.head-box{
+    padding: 30px;
+    height: 300px;
+}
+.top-box{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 11%;
+    left: 12%;
+}
+.box-text h6{
+   background: linear-gradient(180deg, #6B45F5 0%, rgba(107, 69, 245, 0.6875) 85.94%, rgba(107, 69, 245, 0) 100%);
+    ;
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.top-box-2 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+.top-box-3{
+    display: flex;
+    align-items: center;
+    position: absolute;
+   bottom: -20%;
+    right: 14%;
+}
+.top-box-4{
+    display: flex;
+    align-items: center;
+    position: absolute;
+   bottom: -30%;
+    left: 14%;
+}
